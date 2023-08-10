@@ -1,20 +1,20 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Command;
+namespace RafahSBorges\EloquentModelGenerator\Command;
 
 use Illuminate\Config\Repository as AppConfig;
 use Illuminate\Console\Command;
 use Illuminate\Database\DatabaseManager;
-use Krlove\EloquentModelGenerator\Generator;
-use Krlove\EloquentModelGenerator\Helper\EmgHelper;
-use Krlove\EloquentModelGenerator\Helper\Prefix;
+use RafahSBorges\EloquentModelGenerator\Generator;
+use RafahSBorges\EloquentModelGenerator\Helper\EmgHelper;
+use RafahSBorges\EloquentModelGenerator\Helper\Prefix;
 use Symfony\Component\Console\Input\InputOption;
 
 class GenerateModelsCommand extends Command
 {
     use GenerateCommandTrait;
 
-    protected $name = 'krlove:generate:models';
+    protected $name = 'rafahsborges:generate:models';
 
     public function __construct(private Generator $generator, private DatabaseManager $databaseManager)
     {

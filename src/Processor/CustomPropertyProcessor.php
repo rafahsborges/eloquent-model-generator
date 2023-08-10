@@ -1,11 +1,11 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Processor;
+namespace RafahSBorges\EloquentModelGenerator\Processor;
 
-use Krlove\CodeGenerator\Model\DocBlockModel;
-use Krlove\CodeGenerator\Model\PropertyModel;
-use Krlove\EloquentModelGenerator\Config\Config;
-use Krlove\EloquentModelGenerator\Model\EloquentModel;
+use RafahSBorges\CodeGenerator\Model\DocBlockModel;
+use RafahSBorges\CodeGenerator\Model\PropertyModel;
+use RafahSBorges\EloquentModelGenerator\Config\Config;
+use RafahSBorges\EloquentModelGenerator\Model\EloquentModel;
 
 class CustomPropertyProcessor implements ProcessorInterface
 {

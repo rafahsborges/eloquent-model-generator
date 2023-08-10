@@ -1,11 +1,11 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator;
+namespace RafahSBorges\EloquentModelGenerator;
 
 use IteratorAggregate;
-use Krlove\EloquentModelGenerator\Config\Config;
-use Krlove\EloquentModelGenerator\Model\EloquentModel;
-use Krlove\EloquentModelGenerator\Processor\ProcessorInterface;
+use RafahSBorges\EloquentModelGenerator\Config\Config;
+use RafahSBorges\EloquentModelGenerator\Model\EloquentModel;
+use RafahSBorges\EloquentModelGenerator\Processor\ProcessorInterface;
 
 class Generator
 {

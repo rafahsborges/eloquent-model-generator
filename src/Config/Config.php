@@ -1,6 +1,6 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Config;
+namespace RafahSBorges\EloquentModelGenerator\Config;
 
 class Config
 {

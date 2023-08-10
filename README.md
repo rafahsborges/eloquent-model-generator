@@ -1,22 +1,20 @@
 # Eloquent Model Generator
 
-<p align="center"> <a href="https://how-to-help-ukraine-now.super.site" target="_blank"> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/313/flag-ukraine_1f1fa-1f1e6.png" alt="Ukraine" width="50" height="50"/> </a>
-
 Eloquent Model Generator generates Eloquent models using database schema as a source.
 
-## Version 2.0.0
-Version 2.0.0 has been released. Checkout [this discussion](https://github.com/krlove/eloquent-model-generator/discussions/89) for more details and upgrade instructions.
+## Version 3.0.0
+Version 3.0.0 has been released.
 
 ## Installation
 Step 1. Add Eloquent Model Generator to your project:
 ```
-composer require krlove/eloquent-model-generator --dev
+composer require rafahsborges/eloquent-model-generator --dev
 ```
 Step 2. Register `GeneratorServiceProvider`:
 ```php
 'providers' => [
     // ...
-    Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
+    RafahSBorges\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
 ];
 ```
 
@@ -25,21 +23,21 @@ Step 3. Configure your database connection.
 ## Usage
 Use
 ```
-php artisan krlove:generate:model User
+php artisan rafahsborges:generate:model User
 ```
 to generate a model class. Generator will look for table named `users` and generate a model for it.
 
 ### table-name
 Use `table-name` option to specify another table name:
 ```
-php artisan krlove:generate:model User --table-name=user
+php artisan rafahsborges:generate:model User --table-name=user
 ```
 In this case generated model will contain `protected $table = 'user'` property.
 
 ### output-path
 Generated file will be saved into `app/Models` directory of your application and have `App\Models` namespace by default. If you want to change the destination and namespace, supply the `output-path` and `namespace` options respectively:
 ```
-php artisan krlove:generate:model User --output-path=/full/path/to/output/directory --namespace=Your\\Custom\\Models\\Place
+php artisan rafahsborges:generate:model User --output-path=/full/path/to/output/directory --namespace=Your\\Custom\\Models\\Place
 ```
 `output-path` can be absolute path or relative to project's `app` directory. Absolute path must start with `/`:
 - `/var/www/html/app/Models` - absolute path
@@ -48,13 +46,13 @@ php artisan krlove:generate:model User --output-path=/full/path/to/output/direct
 ### base-class-name
 By default, generated class will be extended from `Illuminate\Database\Eloquent\Model`. To change the base class specify `base-class-name` option:
 ```
-php artisan krlove:generate:model User --base-class-name=Custom\\Base\\Model
+php artisan rafahsborges:generate:model User --base-class-name=Custom\\Base\\Model
 ```
 
 ### no-backup
 If `User.php` file already exist, it will be renamed into `User.php~` first and saved at the same directory. Unless `no-backup` option is specified:
 ```
-php artisan krlove:generate:model User --no-backup
+php artisan rafahsborges:generate:model User --no-backup
 ```
 
 ### Other options
@@ -113,7 +111,7 @@ CREATE TABLE `users` (
 ```
 Command:
 ```
-php artisan krlove:generate:model User
+php artisan rafahsborges:generate:model User
 ```
 Result:
 ```php
@@ -166,17 +164,17 @@ class User extends Model
 ```
 
 ## Generating models for all tables
-Command `krlove:generate:models` will generate models for all tables in the database. It accepts all options available for `krlove:generate:model` along with `skip-table` option.
+Command `rafahsborges:generate:models` will generate models for all tables in the database. It accepts all options available for `rafahsborges:generate:model` along with `skip-table` option.
 
 ### skip-table
 Specify one or multiple table names to skip:
 ```php
-php artisan krlove:generate:models --skip-table=users --skip-table=roles
+php artisan rafahsborges:generate:models --skip-table=users --skip-table=roles
 ```
 Note that table names must be specified without prefix if you have one configured.
 
 ## Customization
-You can hook into the process of model generation by adding your own instances of `Krlove\EloquentModelGenerator\Processor\ProcessorInterface` and tagging it with `GeneratorServiceProvider::PROCESSOR_TAG`.
+You can hook into the process of model generation by adding your own instances of `RafahSBorges\EloquentModelGenerator\Processor\ProcessorInterface` and tagging it with `GeneratorServiceProvider::PROCESSOR_TAG`.
 
 Imagine you want to override Eloquent's `perPage` property value.
 ```php
