@@ -1,21 +1,21 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Provider;
+namespace RafahSBorges\EloquentModelGenerator\Provider;
 
 use Illuminate\Console\Events\CommandStarting;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use Krlove\EloquentModelGenerator\Command\GenerateModelCommand;
-use Krlove\EloquentModelGenerator\Command\GenerateModelsCommand;
-use Krlove\EloquentModelGenerator\EventListener\GenerateCommandEventListener;
-use Krlove\EloquentModelGenerator\Generator;
-use Krlove\EloquentModelGenerator\Processor\CustomPrimaryKeyProcessor;
-use Krlove\EloquentModelGenerator\Processor\CustomPropertyProcessor;
-use Krlove\EloquentModelGenerator\Processor\FieldProcessor;
-use Krlove\EloquentModelGenerator\Processor\NamespaceProcessor;
-use Krlove\EloquentModelGenerator\Processor\RelationProcessor;
-use Krlove\EloquentModelGenerator\Processor\TableNameProcessor;
-use Krlove\EloquentModelGenerator\TypeRegistry;
+use RafahSBorges\EloquentModelGenerator\Command\GenerateModelCommand;
+use RafahSBorges\EloquentModelGenerator\Command\GenerateModelsCommand;
+use RafahSBorges\EloquentModelGenerator\EventListener\GenerateCommandEventListener;
+use RafahSBorges\EloquentModelGenerator\Generator;
+use RafahSBorges\EloquentModelGenerator\Processor\CustomPrimaryKeyProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\CustomPropertyProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\FieldProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\NamespaceProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\RelationProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\TableNameProcessor;
+use RafahSBorges\EloquentModelGenerator\TypeRegistry;
 
 class GeneratorServiceProvider extends ServiceProvider
 {

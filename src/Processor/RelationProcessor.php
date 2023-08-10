@@ -1,16 +1,16 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Processor;
+namespace RafahSBorges\EloquentModelGenerator\Processor;
 
 use Illuminate\Database\DatabaseManager;
-use Krlove\EloquentModelGenerator\Config\Config;
-use Krlove\EloquentModelGenerator\Helper\EmgHelper;
-use Krlove\EloquentModelGenerator\Helper\Prefix;
-use Krlove\EloquentModelGenerator\Model\BelongsTo;
-use Krlove\EloquentModelGenerator\Model\BelongsToMany;
-use Krlove\EloquentModelGenerator\Model\EloquentModel;
-use Krlove\EloquentModelGenerator\Model\HasMany;
-use Krlove\EloquentModelGenerator\Model\HasOne;
+use RafahSBorges\EloquentModelGenerator\Config\Config;
+use RafahSBorges\EloquentModelGenerator\Helper\EmgHelper;
+use RafahSBorges\EloquentModelGenerator\Helper\Prefix;
+use RafahSBorges\EloquentModelGenerator\Model\BelongsTo;
+use RafahSBorges\EloquentModelGenerator\Model\BelongsToMany;
+use RafahSBorges\EloquentModelGenerator\Model\EloquentModel;
+use RafahSBorges\EloquentModelGenerator\Model\HasMany;
+use RafahSBorges\EloquentModelGenerator\Model\HasOne;
 
 class RelationProcessor implements ProcessorInterface
 {

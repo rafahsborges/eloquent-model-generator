@@ -1,6 +1,6 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Exception;
+namespace RafahSBorges\EloquentModelGenerator\Exception;
 
 class GeneratorException extends \Exception
 {

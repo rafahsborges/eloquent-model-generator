@@ -1,17 +1,17 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Processor;
+namespace RafahSBorges\EloquentModelGenerator\Processor;
 
 use Illuminate\Database\DatabaseManager;
-use Krlove\CodeGenerator\Model\ClassNameModel;
-use Krlove\CodeGenerator\Model\DocBlockModel;
-use Krlove\CodeGenerator\Model\PropertyModel;
-use Krlove\CodeGenerator\Model\UseClassModel;
-use Krlove\EloquentModelGenerator\Config\Config;
-use Krlove\EloquentModelGenerator\Exception\GeneratorException;
-use Krlove\EloquentModelGenerator\Helper\EmgHelper;
-use Krlove\EloquentModelGenerator\Helper\Prefix;
-use Krlove\EloquentModelGenerator\Model\EloquentModel;
+use RafahSBorges\CodeGenerator\Model\ClassNameModel;
+use RafahSBorges\CodeGenerator\Model\DocBlockModel;
+use RafahSBorges\CodeGenerator\Model\PropertyModel;
+use RafahSBorges\CodeGenerator\Model\UseClassModel;
+use RafahSBorges\EloquentModelGenerator\Config\Config;
+use RafahSBorges\EloquentModelGenerator\Exception\GeneratorException;
+use RafahSBorges\EloquentModelGenerator\Helper\EmgHelper;
+use RafahSBorges\EloquentModelGenerator\Helper\Prefix;
+use RafahSBorges\EloquentModelGenerator\Model\EloquentModel;
 
 class TableNameProcessor implements ProcessorInterface
 {

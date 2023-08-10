@@ -1,11 +1,11 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Command;
+namespace RafahSBorges\EloquentModelGenerator\Command;
 
 use Illuminate\Database\Eloquent\Model;
-use Krlove\EloquentModelGenerator\Config\Config;
-use Krlove\EloquentModelGenerator\Exception\GeneratorException;
-use Krlove\EloquentModelGenerator\Model\EloquentModel;
+use RafahSBorges\EloquentModelGenerator\Config\Config;
+use RafahSBorges\EloquentModelGenerator\Exception\GeneratorException;
+use RafahSBorges\EloquentModelGenerator\Model\EloquentModel;
 use Symfony\Component\Console\Input\InputOption;
 
 trait GenerateCommandTrait

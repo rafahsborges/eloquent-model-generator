@@ -1,14 +1,14 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Processor;
+namespace RafahSBorges\EloquentModelGenerator\Processor;
 
 use Illuminate\Database\DatabaseManager;
-use Krlove\CodeGenerator\Model\DocBlockModel;
-use Krlove\CodeGenerator\Model\PropertyModel;
-use Krlove\EloquentModelGenerator\Config\Config;
-use Krlove\EloquentModelGenerator\Helper\Prefix;
-use Krlove\EloquentModelGenerator\Model\EloquentModel;
-use Krlove\EloquentModelGenerator\TypeRegistry;
+use RafahSBorges\CodeGenerator\Model\DocBlockModel;
+use RafahSBorges\CodeGenerator\Model\PropertyModel;
+use RafahSBorges\EloquentModelGenerator\Config\Config;
+use RafahSBorges\EloquentModelGenerator\Helper\Prefix;
+use RafahSBorges\EloquentModelGenerator\Model\EloquentModel;
+use RafahSBorges\EloquentModelGenerator\TypeRegistry;
 
 class CustomPrimaryKeyProcessor implements ProcessorInterface
 {

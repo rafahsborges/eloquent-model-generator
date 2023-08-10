@@ -1,15 +1,15 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\EventListener;
+namespace RafahSBorges\EloquentModelGenerator\EventListener;
 
 use Illuminate\Console\Events\CommandStarting;
-use Krlove\EloquentModelGenerator\TypeRegistry;
+use RafahSBorges\EloquentModelGenerator\TypeRegistry;
 
 class GenerateCommandEventListener
 {
     private const SUPPORTED_COMMANDS = [
-        'krlove:generate:model',
-        'krlove:generate:models',
+        'rafahsborges:generate:model',
+        'rafahsborges:generate:models',
     ];
 
     public function __construct(private TypeRegistry $typeRegistry) {}

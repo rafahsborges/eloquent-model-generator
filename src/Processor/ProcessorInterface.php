@@ -1,9 +1,9 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Processor;
+namespace RafahSBorges\EloquentModelGenerator\Processor;
 
-use Krlove\EloquentModelGenerator\Config\Config;
-use Krlove\EloquentModelGenerator\Model\EloquentModel;
+use RafahSBorges\EloquentModelGenerator\Config\Config;
+use RafahSBorges\EloquentModelGenerator\Model\EloquentModel;
 
 interface ProcessorInterface
 {

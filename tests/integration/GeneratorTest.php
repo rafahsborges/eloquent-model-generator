@@ -1,21 +1,21 @@
 <?php
 
-namespace Krlove\Tests\Integration;
+namespace RafahSBorges\Tests\Integration;
 
 use Illuminate\Database\Connectors\SQLiteConnector;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\SQLiteConnection;
-use Krlove\EloquentModelGenerator\Config\Config;
-use Krlove\EloquentModelGenerator\Generator;
-use Krlove\EloquentModelGenerator\Helper\EmgHelper;
-use Krlove\EloquentModelGenerator\Processor\CustomPrimaryKeyProcessor;
-use Krlove\EloquentModelGenerator\Processor\CustomPropertyProcessor;
-use Krlove\EloquentModelGenerator\Processor\FieldProcessor;
-use Krlove\EloquentModelGenerator\Processor\NamespaceProcessor;
-use Krlove\EloquentModelGenerator\Processor\RelationProcessor;
-use Krlove\EloquentModelGenerator\Processor\TableNameProcessor;
-use Krlove\EloquentModelGenerator\TypeRegistry;
+use RafahSBorges\EloquentModelGenerator\Config\Config;
+use RafahSBorges\EloquentModelGenerator\Generator;
+use RafahSBorges\EloquentModelGenerator\Helper\EmgHelper;
+use RafahSBorges\EloquentModelGenerator\Processor\CustomPrimaryKeyProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\CustomPropertyProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\FieldProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\NamespaceProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\RelationProcessor;
+use RafahSBorges\EloquentModelGenerator\Processor\TableNameProcessor;
+use RafahSBorges\EloquentModelGenerator\TypeRegistry;
 use PHPUnit\Framework\TestCase;
 
 class GeneratorTest extends TestCase

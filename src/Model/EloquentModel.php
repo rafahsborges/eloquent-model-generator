@@ -1,18 +1,18 @@
 <?php
 
-namespace Krlove\EloquentModelGenerator\Model;
+namespace RafahSBorges\EloquentModelGenerator\Model;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo as EloquentBelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany as EloquentBelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany as EloquentHasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne as EloquentHasOne;
 use Illuminate\Support\Str;
-use Krlove\CodeGenerator\Model\ClassModel;
-use Krlove\CodeGenerator\Model\DocBlockModel;
-use Krlove\CodeGenerator\Model\MethodModel;
-use Krlove\CodeGenerator\Model\VirtualPropertyModel;
-use Krlove\EloquentModelGenerator\Exception\GeneratorException;
-use Krlove\EloquentModelGenerator\Helper\EmgHelper;
+use RafahSBorges\CodeGenerator\Model\ClassModel;
+use RafahSBorges\CodeGenerator\Model\DocBlockModel;
+use RafahSBorges\CodeGenerator\Model\MethodModel;
+use RafahSBorges\CodeGenerator\Model\VirtualPropertyModel;
+use RafahSBorges\EloquentModelGenerator\Exception\GeneratorException;
+use RafahSBorges\EloquentModelGenerator\Helper\EmgHelper;
 
 class EloquentModel extends ClassModel
 {
